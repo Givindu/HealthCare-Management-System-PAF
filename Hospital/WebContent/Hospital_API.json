@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "0275c673-5bb1-4969-9609-8238bc4c4648",
+		"name": "C:\\Users\\ACER\\Desktop\\fi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Hospital",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "praveen",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8085/Hospital/HospitalService/Hospital",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"Hospital",
+						"HospitalService",
+						"Hospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Hospital",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "praveen",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "H_name",
+							"value": "Medihelp Hospital",
+							"type": "text"
+						},
+						{
+							"key": "H_contactNumber",
+							"value": "0115437654",
+							"type": "text"
+						},
+						{
+							"key": "H_address",
+							"value": "No 172/3,\n,Panadura Road,\nHorana.",
+							"type": "text"
+						},
+						{
+							"key": "H_email",
+							"value": "nfo@medihelp.lk",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/Hospital/HospitalService/Hospital",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"Hospital",
+						"HospitalService",
+						"Hospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Hospital",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "praveen",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"H_ID\":\"11\",\n\"H_name\":\"Medihelp Hospital\",\n\"H_contactNumber\":\"0115437654\",\n\"H_address\":\"No 246,Galle Road,Moratuwa.\",\n\"H_email\":\"info@medihelp.lk\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8085/Hospital/HospitalService/Hospital",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"Hospital",
+						"HospitalService",
+						"Hospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL Hospital",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "praveen",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<dData>\n <H_ID>11</H_ID>\n</dData>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/Hospital/HospitalService/Hospital",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"Hospital",
+						"HospitalService",
+						"Hospital"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DEL Hospital",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<dData>\n <H_ID>13</H_ID>\n</dData>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/Hospital/HospitalService/Hospital",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"Hospital",
+								"HospitalService",
+								"Hospital"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Apr 2020 12:51:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": " Hospital Deleted successfully"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
